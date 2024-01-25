@@ -1,0 +1,69 @@
+[{
+  "_id": 1,
+  "nome": "Guitarra",
+  "tipo": "Corda",
+  "preco": 1000,
+  "estoque": 50,
+  "caracteristicas": {
+    "cor": "Vermelha",
+    "marca": "Fender",
+    "material": "Madeira",
+    "peso": 3.5
+  },
+  "comentarios": [
+    {
+      "cliente_id": 101,
+      "texto": "Ótimo som!"
+    },
+    {
+      "cliente_id": 102,
+      "texto": "Design incrível."
+    }
+  ]
+},
+{
+  "_id": 2,
+  "nome": "Bateria",
+  "tipo": "Percussão",
+  "preco": 2500,
+  "estoque": 20,
+  "caracteristicas": {
+    "cor": "Preto",
+    "marca": "pearl",
+    "material": "aço",
+    "peso": 15
+  },
+  "comentarios": [
+    {
+      "cliente_id": 101,
+      "texto": "Ótimo som!"
+    },
+    {
+      "cliente_id": 104,
+      "texto": "Não gostei muito do produto."
+    }
+  ]
+},
+{
+  "_id": 3,
+  "nome": "Flauta Transversal",
+  "tipo": "Sopro",
+  "preco": 5300,
+  "estoque": 10,
+  "caracteristicas": {
+    "cor": "Prata",
+    "marca": "Yamaha",
+    "material": "Níquel Prateado",
+    "peso": 0.5
+  },
+  "comentarios": [
+    {
+      "cliente_id": 106,
+      "texto": "Som cristalino"
+    },
+    {
+      "cliente_id": 105,
+      "texto": "Material de ótima qualidade."
+    }
+  ]
+}]

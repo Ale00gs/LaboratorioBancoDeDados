@@ -1,0 +1,44 @@
+[{
+  "_id": 101,
+  "nome": "Maria Silva",
+  "email": "maria@email.com",
+  "telefone": "98478-6699",
+  "instrumentos_comprados": [
+    {
+      "instrumento_id": 1,
+      "quantidade": 2
+    }
+  ]
+},
+{
+  "_id": 102,
+  "nome": "João Oliveira",
+  "email": "joao@email.com",
+  "telefone": "94655-2244",
+  "instrumentos_comprados": [
+    {
+      "instrumento_id": 1,
+      "quantidade": 1
+    },
+    {
+      "instrumento_id": 2,
+      "quantidade": 1
+    }
+  ]
+},
+{
+  "_id": 103,
+  "nome": "Sofia Pereira",
+  "email": "sofip@email.com",
+  "telefone": "98255-6644",
+  "instrumentos_comprados": [
+    {
+      "instrumento_id": 3,
+      "quantidade": 1
+    },
+    {
+      "instrumento_id": 1,
+      "quantidade": 1
+    }
+  ]
+}]
