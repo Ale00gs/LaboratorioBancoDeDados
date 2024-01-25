@@ -19,8 +19,61 @@
 <p align="center"> 
   Aqui está um exercício que eu fiz para a fixação do conteúdo de Laboratório de Banco de Dados, no 4º termo de Análise e Desenvolvimento de Sistemas.
   Modelagem de dados no formato JSON (banco de dados não relacional - modelo documental)
-      
 </p>
+
+## 
+### <p align="center"> COMANDOS DA LOJA DE INSTRUMENTOS</p>
+
+### Inserir – (Inserir um novo instrumento)
+
+
+      db.instrumentos.insertOne(
+        {
+          "_id": 4,
+          "nome": "Teclado",
+          "tipo": "Teclas",
+          "preco": 2000,
+          "estoque": 25,
+          "caracteristicas": {
+              "cor": "Branco",
+              "marca": "Casio",
+              "material": "Madeira",
+              "peso": 3.5 },
+          "comentarios": [
+              { "cliente_id": 101,
+                "texto": "Ótimo som!"},
+              { "cliente_id": 102,
+                "texto": "Design incrível." }]
+        })
+
+### Pesquisar (Operadores relacionais) – (Pesquisar instrumentos com preço maior que $1500.00)
+
+
+      db.instrumentos.find({"preco": {"$gt": 1500.00}})
+
+### Atualizar (Operadores relacionais) – (Atualizar o estoque da Guitarra para 45 unidades)
+
+
+      db.instrumentos.updateOne({"nome": "Guitarra"}, {"$set": {"estoque": 45}})
+
+### Excluir (Operadores relacionais) – (Excluir cliente com ID 102)
+
+
+      db.clientes.deleteOne({"_id": 102})
+
+### Juntar documentos das coleções da modelagem – (Juntar o cliente com o instrumento comprado)
+
+
+      db.clientes.aggregate([
+      {
+        $lookup: {
+          from: "instrumentos",
+          localField: "instrumentos_comprados.instrumento_id",
+          foreignField: "_id",
+          as: "instrumentos_comprados_info" }}
+    ])
+
+
 
 ## Contato
 
